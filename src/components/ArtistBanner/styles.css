@@ -1,0 +1,39 @@
+.artist-banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.artist-banner__profile__artist-name {
+    color: var(--white);
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.artist-banner__profile {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 63%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.artist-banner__profile img {
+    width: 6rem;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.artist-banner__general-info {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.8rem;
+}

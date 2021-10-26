@@ -1,0 +1,23 @@
+.artist-header {
+    background-color: var(--orange-transparency);
+    padding: 1.5rem 0;
+    position: absolute;
+    width: 100vw;
+    z-index: 10;
+}
+
+.artist-header__go-back-button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 1rem;
+}
+
+.artist-header__go-back-button img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.artist-header__logo {
+    height: 1.5rem;
+}
