@@ -23,7 +23,7 @@ const MenuHeader: React.FC<SearchBarProps> = ({ inputValue, searchResults, handl
                 <span className={`menu-header__bottom-header__search-results ${inputValue && 'show-box'}`}>
                     {searchResults} resultado(s)
                 </span>
-                <button className="menu-header__bottom-header__order-by-button" onClick={toggleOrderBy}><img src={OrderBy} alt="order by" /></button>
+                <button className="menu-header__bottom-header__order-by-button" onClick={toggleOrderBy}><img src={OrderBy} alt="" /></button>
             </div>
         </header>
     )

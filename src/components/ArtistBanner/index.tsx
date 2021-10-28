@@ -1,16 +1,23 @@
 import './styles.css'
 
-const ArtistBanner: React.FC = () => {
+interface ArtistBannerProps {
+    name: string
+    image: string
+    genre: string
+    plays: number
+}
+
+const ArtistBanner: React.FC<ArtistBannerProps> = ({ name, image, genre, plays }) => {
     return (
         <section className="artist-banner">
-            <img alt="" src="https://www.vagalume.com.br/pink-floyd/images/pink-floyd.jpg" />
+            <img alt="" src={image} />
             <div className="artist-banner__profile">
-                <h1 className="artist-banner__profile__artist-name">Pink Floyd</h1>
-                <img alt="" src="https://www.vagalume.com.br/pink-floyd/images/pink-floyd.jpg" />
+                <h1 className="artist-banner__profile__artist-name">{name}</h1>
+                <img alt="" src={image} />
             </div>
             <div className="artist-banner__general-info">
-                <span>rock</span>
-                <span>284.212 plays</span>
+                <span>{genre}</span>
+                <span>{plays} plays</span>
             </div>
         </section>
     )

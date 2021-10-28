@@ -1,0 +1,21 @@
+.album-card {
+    display: grid;
+}
+
+.album-card-img {
+    grid-area: 1 / 1;
+    max-height: 30vmin;
+    max-width: 30vmin;
+}
+
+.album-card-title {
+    align-self: flex-end;
+    background: linear-gradient(transparent, #000);
+    color: var(--white);
+    font-size: 0.7rem;
+    grid-area: 1 / 1;
+    max-width: 28vmin;
+    padding: 0 0 0.5rem 0.3rem;
+    text-align: left;
+    width: fit-content;
+}

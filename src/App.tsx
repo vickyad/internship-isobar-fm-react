@@ -1,17 +1,18 @@
 import { useState } from 'react';
-import './App.css';
 import ArtistPage from './pages/ArtistPage';
 import Home from './pages/Home';
+import './App.css';
 
 const App = () => {
-  const [isArtistProfile, setIsArtistProfile] = useState(true)
+  const [artistId, setArtistId] = useState<string | null>(null)
+
   return (
     <div className="App">
       {
-        isArtistProfile ?
-          <ArtistPage onGoBack={() => setIsArtistProfile(false)} />
+        artistId ?
+          <ArtistPage artistId={artistId} onGoBack={() => setArtistId(null)} />
           :
-          <Home />
+          <Home onProfileClick={artistId => setArtistId(artistId)} />
       }
     </div>
   );
